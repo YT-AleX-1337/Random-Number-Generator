@@ -1,0 +1,40 @@
+<head>
+  <title>Random Number Generator</title>
+  <style type="text/css">
+    body {background-image:url('bk.jpg')}
+    h2 {font-family:sans-serif; font-size:125%}
+    div {font-family:sans-serif; font-size:125%}
+    input {font-size:113%}
+    button {font-size:125%}
+  </style>
+  <script>
+    function roll_it()
+    {
+      document.title = "GET RICKROLLED LOL";
+      document.getElementById("body").style.backgroundImage = "url('')";
+      document.getElementById("body").style.backgroundColor = "black";
+      document.getElementById("div").style.display = "none";
+      document.getElementById("video-div").style.display = "block";
+      document.getElementById("video").play();
+    }
+  </script>
+</head>
+<body id="body" onclick="roll_it()">
+  <div id="div">
+    <h1>Random Number Generator</h1>	
+    This simple website allows you to generate a random number!<br><br>
+    Min: <input type="number"></input><br><br>
+    Max: <input type="number"></input><br><br>
+    <button type="button">Generate</button><br><br>
+    <image src="ax.png" width="5%">
+  </div>
+  <div id="video-div" style="display:none">
+    <div style="color:#FF80FF">
+      Random number: 1987
+    </div>
+    <video id="video" width="70%" height="70%" style="position:absolute; top:43%; left:50%; transform:translate(-50%, -50%)" loop preload>
+      <source src="rr.mp4" type="video/mp4"/>
+    </video>
+    <h1 style="font-family:serif; font-weight:normal; font-size:500%; color:white; position:absolute; top:82%; left:50%; transform:translate(-50%, -50%)">LOL</h1>
+  </div>
+</body>
